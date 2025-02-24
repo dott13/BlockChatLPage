@@ -213,3 +213,74 @@ section p {
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
+
+.contact {
+  background: #f1f9ff;
+  padding: 60px 0;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info {
+  color: #333;
+}
+
+.contact-info h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Contact Form Styles */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 15px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.contact-form button:active {
+  transform: scale(0.95);
+}
