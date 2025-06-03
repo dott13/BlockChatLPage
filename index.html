@@ -65,68 +65,87 @@
       </div>
     </header>
 
-    <div class="mobile-only">
-      <p class="mobile-banner">Hello for mobile!</p>
+    <div class="block md:hidden">
+      <p class="text-center bg-brand-blue text-white py-2 text-sm m-0">Hello for mobile!</p>
     </div>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>Block Chat</h1>
-          <p>
-            Create your own chat applications without writing a single line of
-            code. Enjoy endless customization, custom addons, and blazing-fast
-            performance powered by Rust.
+    
+    <section
+      id="home"
+      class="bg-gradient-to-br from-blue-600 to-cyan-400 text-white"
+    >
+      <div class="mx-auto max-w-6xl px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Block Chat</h1>
+          <p class="text-lg md:text-xl mb-8 leading-snug">
+            Create your own chat applications without writing a single line of code.
+            Enjoy endless customization, custom addons, and blazing-fast performance
+            powered by Rust.
           </p>
         </div>
-        <div class="hero-media">
+        <div class="flex flex-col items-center">
           <img
             src="assets/blockchat-hero.png"
             alt="Person chatting on phone"
-            class="hero-image"
+            class="w-full max-w-md border-4 border-white rounded-lg shadow-lg"
           />
-          <a href="#contact" class="cta-btn large">Get Started</a>
+          <a
+            href="#contact"
+            class="mt-8 w-64 text-center text-blue-600 bg-white font-semibold py-3 rounded-md shadow hover:bg-gray-100 transition"
+          >
+            Get Started
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="features" class="features">
-      <div class="container">
-        <h2>Features</h2>
-        <div class="feature-list">
-          <div class="feature">
-            <div class="feature-icon">🚀</div>
-            <h3>No-Code Setup</h3>
-            <p>Deploy chat apps without writing any code.</p>
-            <p>
+    <section id="features" class="bg-gray-50 py-16">
+      <div class="mx-auto max-w-6xl px-4">
+        <h2 class="text-3xl font-bold text-blue-600 text-center mb-12">Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <div class="bg-white border-2 border-blue-600 rounded-lg p-6 shadow hover:shadow-md transition">
+            <div class="text-4xl mb-4 text-blue-600">🚀</div>
+            <h3 class="text-xl font-semibold mb-2">No-Code Setup</h3>
+            <p class="text-gray-700 mb-2">
+              Deploy chat apps without writing any code.
+            </p>
+            <p class="text-gray-600 text-sm">
               Our intuitive interface allows you to launch fully functional chat
               applications instantly.
             </p>
           </div>
-          <div class="feature">
-            <div class="feature-icon">🧩</div>
-            <h3>Custom Addons</h3>
-            <p>Create addons in any programming language using our API.</p>
-            <p>
+        
+          <div class="bg-white border-2 border-blue-600 rounded-lg p-6 shadow hover:shadow-md transition">
+            <div class="text-4xl mb-4 text-blue-600">🧩</div>
+            <h3 class="text-xl font-semibold mb-2">Custom Addons</h3>
+            <p class="text-gray-700 mb-2">
+              Create addons in any programming language using our API.
+            </p>
+            <p class="text-gray-600 text-sm">
               Enhance your chat experience by integrating custom functionalities
               seamlessly.
             </p>
           </div>
-          <div class="feature">
-            <div class="feature-icon">🎨</div>
-            <h3>Full Customization</h3>
-            <p>
+        
+          <div class="bg-white border-2 border-blue-600 rounded-lg p-6 shadow hover:shadow-md transition">
+            <div class="text-4xl mb-4 text-blue-600">🎨</div>
+            <h3 class="text-xl font-semibold mb-2">Full Customization</h3>
+            <p class="text-gray-700 mb-2">
               Tailor every detail of your chat application to suit your needs.
             </p>
-            <p>
+            <p class="text-gray-600 text-sm">
               Design a unique user experience with flexible, powerful
               customization options.
             </p>
           </div>
-          <div class="feature">
-            <div class="feature-icon">⚡️</div>
-            <h3>Rust-Powered Speed</h3>
-            <p>Experience lightning-fast performance and reliability.</p>
-            <p>
+        
+          <div class="bg-white border-2 border-blue-600 rounded-lg p-6 shadow hover:shadow-md transition">
+            <div class="text-4xl mb-4 text-blue-600">⚡️</div>
+            <h3 class="text-xl font-semibold mb-2">Rust-Powered Speed</h3>
+            <p class="text-gray-700 mb-2">
+              Experience lightning-fast performance and reliability.
+            </p>
+            <p class="text-gray-600 text-sm">
               Our backend built in Rust ensures that your chat app runs smoothly
               at scale.
             </p>
@@ -135,113 +154,157 @@
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="container about-container">
-        <div class="about-text">
-          <h2>Why Choose BlockChat?</h2>
-          <p>
+    <section
+      id="about"
+      class="bg-gradient-to-bl from-blue-50 to-blue-100 py-20"
+    >
+      <div class="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
+            Why Choose BlockChat?
+          </h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
             BlockChat isn’t just another chat platform—it’s a revolution in
-            communication. With our cutting‑edge technology and intuitive
-            design, create personalized chat experiences that truly connect
-            communities.
+            communication. With our cutting-edge technology and intuitive design,
+            create personalized chat experiences that truly connect communities.
           </p>
-          <p>
+          <p class="text-gray-700 leading-relaxed">
             Enjoy fully customizable interfaces, seamless integrations, and
-            lightning‑fast performance powered by Rust. Join us and experience
+            lightning-fast performance powered by Rust. Join us and experience
             the future of chatting!
           </p>
         </div>
-        <div class="about-image">
-          <!-- Replace this placeholder with your own creative image -->
-          <img src="assets/blockchat-about.jpeg" alt="BlockChat-about" />
+        <div class="flex justify-center">
+          <img
+            src="assets/blockchat-about.jpeg"
+            alt="BlockChat-about"
+            class="w-full max-w-lg border-4 border-blue-600 rounded-lg shadow-xl"
+          />
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container contact-container">
-        <div class="contact-info">
-          <h2>Contact Us</h2>
-          <p>
-            If you have any questions or need support, feel free to get in
-            touch!
+    <section id="contact" class="bg-blue-50 py-16">
+      <div class="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="space-y-4">
+          <h2 class="text-3xl font-bold text-blue-600">Contact Us</h2>
+          <p class="text-gray-700">
+            If you have any questions or need support, feel free to get in touch!
           </p>
-          <p>
+          <p class="text-gray-700">
             Email:
-            <a href="mailto:dot.pov13@gmail.com">dot.pov13@gmail.com</a>
+            <a
+              href="mailto:dot.pov13@gmail.com"
+              class="text-blue-600 hover:underline"
+            >
+              dot.pov13@gmail.com
+            </a>
           </p>
-          <p>Phone: (555) 123-4567</p>
+          <p class="text-gray-700">Phone: (555) 123-4567</p>
         </div>
-        <div class="contact-form">
-          <form action="">
-            <input type="text" name="name" placeholder="Your Name" required />
+      
+        <div>
+          <form class="space-y-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              class="w-full border-2 border-blue-600 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
+              class="w-full border-2 border-blue-600 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               rows="5"
               required
+              class="w-full border-2 border-blue-600 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
             ></textarea>
-            <button type="submit">Send Message</button>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white font-semibold py-3 rounded-md shadow hover:bg-blue-700 transition"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container footer-container">
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#features">Features</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+    <footer class="bg-brand-blue text-white py-10">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col items-center space-y-6">
+        <div class="flex flex-wrap gap-6 justify-center">
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="#features" class="hover:underline">Features</a>
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#contact" class="hover:underline">Contact</a>
         </div>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/tudor.popov13"
-            ><img
+        <div class="flex gap-6">
+          <a href="https://www.instagram.com/tudor.popov13">
+            <img
               src="assets/insta-svg.svg"
               alt="Instagram"
-              width="24px"
-              height="24px"
-              class="social-icon"
-          /></a>
-          <a href="https://www.t.me/TheDott13"
-            ><img
+              class="w-6 h-6"
+            />
+          </a>
+          <a href="https://www.t.me/TheDott13">
+            <img
               src="assets/telegram-sv.svg"
               alt="Telegram"
-              width="24px"
-              height="24px"
-              class="social-icon"
-          /></a>
-          <a href="not-implemented-yet"
-            ><img
+              class="w-6 h-6"
+            />
+          </a>
+          <a href="not-implemented-yet">
+            <img
               src="assets/discord-svg.svg"
               alt="Discord"
-              width="24px"
-              height="24px"
-              class="social-icon"
-          /></a>
+              class="w-6 h-6"
+            />
+          </a>
         </div>
-        <p class="footer-copy">&copy; 2025 BlockChat. All rights reserved.</p>
+        <p class="text-sm">&copy; 2025 BlockChat. All rights reserved.</p>
       </div>
     </footer>
-    <div class="mascot-container">
-      <div class="mascot">
+
+    <div class="mascot-container fixed bottom-5 left-5 w-24 z-50 animate-walk">
+      <div class="mascot relative animate-tilt">
         <img
           src="assets/blockchat-mascot.svg"
           alt="BlockChat Mascot"
-          class="mascot-img"
+          class="mascot-img w-full animate-jump"
         />
-        <div class="speech-bubble">
+        <div
+          class="speech-bubble invisible opacity-0 bg-brand-blue text-white text-center rounded-md px-3 py-2 absolute -top-32 -left-8 transition-opacity duration-300"
+        >
           👋 Welcome to BlockChat!<br />
           Click “Get Started” to begin.
         </div>
       </div>
+    </div>
+
+    <!-- Hover reveal for the speech bubble -->
+    <script>
+      document
+        .querySelector(".mascot")
+        .addEventListener("mouseenter", function () {
+          const bubble = this.querySelector(".speech-bubble");
+          bubble.classList.remove("invisible", "opacity-0");
+          bubble.classList.add("visible", "opacity-100");
+        });
+      document
+        .querySelector(".mascot")
+        .addEventListener("mouseleave", function () {
+          const bubble = this.querySelector(".speech-bubble");
+          bubble.classList.remove("visible", "opacity-100");
+          bubble.classList.add("invisible", "opacity-0");
+        });
+    </script>
     </div>
   </body>
 </html>
