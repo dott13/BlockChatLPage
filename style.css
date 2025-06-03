@@ -353,6 +353,24 @@ footer {
   display: block;
 }
 
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+    text-align: center;
+    background: #007bff;
+    color: #fff;
+    padding: 8px;
+    font-size: 0.95em;
+  }
+  .mobile-banner {
+    margin: 0;
+  }
+}
+
 @keyframes popUp {
   0% {
     transform: scale(0);
