@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Background Circle -->
+  <circle cx="200" cy="200" r="150" fill="#f0f9ff" />
+  
+  <!-- Main Block Character Body -->
+  <rect x="140" y="130" width="120" height="120" rx="20" ry="20" fill="#3b82f6" />
+  
+  <!-- Face -->
+  <circle cx="180" cy="170" r="12" fill="white" /> <!-- Left eye -->
+  <circle cx="220" cy="170" r="12" fill="white" /> <!-- Right eye -->
+  <circle cx="180" cy="170" r="6" fill="#1e3a8a" /> <!-- Left pupil -->
+  <circle cx="220" cy="170" r="6" fill="#1e3a8a" /> <!-- Right pupil -->
+  <path d="M175 200 Q200 220 225 200" stroke="white" stroke-width="5" fill="none" /> <!-- Smile -->
+  
+  <!-- Speech Bubble Block -->
+  <rect x="230" y="100" width="80" height="60" rx="10" ry="10" fill="#10b981" />
+  <polygon points="240,160 230,180 260,160" fill="#10b981" /> <!-- Speech bubble pointer -->
+  
+  <!-- Block Hands/Arms -->
+  <rect x="100" y="160" width="40" height="20" rx="10" ry="10" fill="#3b82f6" /> <!-- Left arm -->
+  <rect x="260" y="160" width="40" height="20" rx="10" ry="10" fill="#3b82f6" /> <!-- Right arm -->
+  
+  <!-- Building Blocks Below Character -->
+  <rect x="130" y="270" width="40" height="40" rx="5" ry="5" fill="#f59e0b" /> <!-- Yellow block -->
+  <rect x="180" y="270" width="40" height="40" rx="5" ry="5" fill="#ef4444" /> <!-- Red block -->
+  <rect x="230" y="270" width="40" height="40" rx="5" ry="5" fill="#8b5cf6" /> <!-- Purple block -->
+  
+  <!-- Code-free Symbol: Crossed-out code brackets -->
+  <text x="165" y="195" font-family="monospace" font-size="24" fill="white">{ }</text>
+  <line x1="150" y1="195" x2="190" y2="195" stroke="white" stroke-width="3" />
+  <line x1="170" y1="175" x2="170" y2="215" stroke="white" stroke-width="3" transform="rotate(45 170 195)" />
+  
+  <!-- Chat Symbols in Speech Bubble -->
+  <rect x="240" y="110" width="25" height="15" rx="5" ry="5" fill="white" />
+  <rect x="275" y="110" width="25" height="15" rx="5" ry="5" fill="white" />
+  <rect x="240" y="135" width="60" height="15" rx="5" ry="5" fill="white" />
+</svg>
