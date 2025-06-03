@@ -44,4 +44,4 @@ This repository contains all the code for the landing page along with modern des
 ## Live Demo
 
 Check out the live demo of the BlockChat landing page here:  
-[BlockChat Landing Page Demo](https://drive.google.com/file/d/1X4Kqvh1nEWe9bRqX4QCqwSL_hHOAaj36/view?usp=sharingcom)
+[BlockChat Landing Page Demo](https://drive.google.com/file/d/1TVw3W6YLb7e74EVA5R4ApOGLiqceYaCx/view?usp=drive_link)
