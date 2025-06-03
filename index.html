@@ -5,17 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Block Chat - A WebChat for everyone</title>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-blue': '#007bff',
+              'brand-light-blue': '#00c6ff'
+            },
+            animation: {
+              'walk': 'walk 4s ease-in-out infinite',
+              'tilt': 'tilt 3s ease-in-out infinite',
+              'jump': 'jump 2s ease-in-out infinite'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @keyframes walk {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(10px); }
+      }
+      @keyframes tilt {
+        0%, 100% { transform: rotate(-10deg); }
+        50% { transform: rotate(10deg); }
+      }
+      @keyframes jump {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+      
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      .hero-gradient {
+        background: linear-gradient(45deg, #007bff, #00c6ff);
+      }
+
+      .about-gradient {
+        background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <body class="font-sans leading-relaxed text-gray-800 bg-white">
+    <header class="bg-brand-blue h-18">
+      <div class="full">
+        <nav class="text-right mr-4">
+          <ul class="list-none m-0 p-0 inline-block">
+            <li class="inline-block"><a class="block h-16 my-1 leading-none py-5 px-4 text-white no-underline font-bold transition-all duration-300 hover:bg-white hover:bg-opacity-20 hover:shadow-lg active:scale-95" href="#home">Home</a></li>
+            <li class="inline-block"><a class="block h-16 my-1 leading-none py-5 px-4 text-white no-underline font-bold transition-all duration-300 hover:bg-white hover:bg-opacity-20 hover:shadow-lg active:scale-95" href="#features">Features</a></li>
+            <li class="inline-block"><a class="block h-16 my-1 leading-none py-5 px-4 text-white no-underline font-bold transition-all duration-300 hover:bg-white hover:bg-opacity-20 hover:shadow-lg active:scale-95" href="#about">About</a></li>
+            <li class="inline-block"><a class="block h-16 my-1 leading-none py-5 px-4 text-white no-underline font-bold transition-all duration-300 hover:bg-white hover:bg-opacity-20 hover:shadow-lg active:scale-95" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
