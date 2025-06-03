@@ -337,24 +337,64 @@ footer {
   margin-top: 10px;
 }
 
-.mascot {
+.mobile-only {
+  display: none;
+}
+
+.mascot-container {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  z-index: 1000;
   width: 100px;
-  opacity: 0;
-  animation: popUp 1s forwards;
-  animation-delay: 2s;
+  z-index: 1000;
+  animation: walk 4s ease-in-out infinite;
 }
 
-.mascot img {
+.mascot {
+  position: relative;
+  width: 100%;
+  animation: tilt 3s ease-in-out infinite;
+}
+
+.mascot-img {
   width: 100%;
   display: block;
+  animation: jump 2s ease-in-out infinite;
 }
 
-.mobile-only {
-  display: none;
+.speech-bubble {
+  visibility: hidden;
+  opacity: 0;
+  width: 160px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px;
+  position: absolute;
+  bottom: 110%;
+  left: -30px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.9em;
+  line-height: 1.2;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;     /* right at the bottom edge of the bubble */
+  left: 50%;
+  margin-left: -6px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #007bff transparent transparent transparent;
+}
+
+.mascot:hover .speech-bubble {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -498,5 +538,32 @@ footer {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes walk {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes tilt {
+  0%, 100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
   }
 }
