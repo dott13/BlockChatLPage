@@ -400,6 +400,23 @@ footer {
   .feature p {
     font-size: 0.9em;
   }
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-text h2 {
+    font-size: 2.2em;
+  }
+  .about-text p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  .about-image img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .mobile-only {
     display: block;
     text-align: center;
