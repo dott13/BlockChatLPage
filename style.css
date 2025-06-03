@@ -417,6 +417,23 @@ footer {
     max-width: 100%;
     margin: 0 auto;
   }
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .contact-info h2 {
+    font-size: 2em;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95em;
+    padding: 8px;
+  }
+  .contact-form button {
+    font-size: 1em;
+    padding: 12px;
+  }
   .mobile-only {
     display: block;
     text-align: center;
