@@ -382,6 +382,24 @@ footer {
     padding: 14px 0;
     margin: 20px auto 0 auto;
   }
+  .feature-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .feature {
+    flex: 1 1 100%;
+    padding: 16px;
+  }
+  .feature-icon {
+    font-size: 2.5em;
+  }
+  .feature h3 {
+    font-size: 1.2em;
+  }
+  .feature p {
+    font-size: 0.9em;
+  }
   .mobile-only {
     display: block;
     text-align: center;
@@ -392,6 +410,17 @@ footer {
   }
   .mobile-banner {
     margin: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .feature {
+    flex: 1 1 45%;
   }
 }
 
